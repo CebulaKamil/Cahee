@@ -77,34 +77,71 @@ h1.home-header-text {
 
 /* -- About -- */
 .about {
-    height: 100vh;
+    min-height: 100vh;
     background-color: rgb(0, 177, 177);
 }
 
 img.img-responsive {
     height: auto;
-    width: 100%;
-    
+    width: 100%;  
+    padding-top: 10%; 
+}
+
+.about-us-content {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* -- Services -- */
 .services {
-    height: 100vh;
-    background-color: yellow;
+    min-height: 100vh;
+    background-color: rgb(112, 191, 255);
 }
+
+
+
 
 h1.about-us {
     font-weight: bold;
     padding-top: 30vh;
 }
+
+
 /* -- Gallery -- */
+
+/* -- Subscribe -- */
+.subscribe {
+    height: 70vh;
+    background-color: white;
+    background-image: url("../img/subscribe-background.png");
+    background-position: center;
+    background-size: cover;
+}
 /* -- Blog -- */
+.blog {
+    min-height: 100vh;
+    background-color: rgb(176, 124, 2470);
+}
+
+.blog-text-header {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-header {
+    font-weight: bold;
+}
 /* -- Contact -- */
 .contact {
-    height: 100vh;
+    min-height: 100vh;
     background-image: url("../img/background-footer.png");
     background-size: cover;
     background-position: center;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 h1.footer-header-text {
@@ -120,5 +157,11 @@ h1.footer-header-text {
 .text-footer-container {
     margin-left: auto;
     margin-right: auto;
+}
+
+/* Form */
+.from-control1 {
+    background-color: red;
+    border: none;
 }
 
