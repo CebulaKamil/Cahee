@@ -118,11 +118,18 @@ h1.about-us {
 /* -- Subscribe -- */
 .subscribe {
     padding-top: 5vh;
-    height: 70vh;
+    min-height: 70vh;
     background-color: white;
     background-image: url("../img/subscribe-background.png");
     background-position: center;
     background-size: cover;
+}
+
+.subscribe-button {
+    background-color: rgb(150, 185, 44);
+    height: 50px;
+    border: none;
+    width: 100px;
 }
 /* -- Blog -- */
 .blog {
@@ -173,7 +180,7 @@ h1.footer-header-text {
     background-color: rgba(0,196,196,0.5);
     margin-top: 10px;
     color: white;
-    max-width: 600px;
+    max-width: 100%;
     border-radius: 0px;
     border: none;
     border-width: 0px;
@@ -184,6 +191,10 @@ h1.footer-header-text {
     border-left: 3px solid rgb(53, 91,130);
     color: white;
 }
+.xxx {
+    min-width: 80%;
+}
+
 
 .form-control::placeholder {
     color: white;
