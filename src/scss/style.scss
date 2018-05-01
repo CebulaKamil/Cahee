@@ -1,6 +1,3 @@
-body {
-
-}
 /* Style link "a" */
 a:link, a:visited, a:hover, a:active {
     text-decoration: none;
@@ -98,6 +95,12 @@ img.img-responsive {
     background-color: rgb(112, 191, 255);
 }
 
+.btn {
+    margin-top: 10px;
+    width: 400px;
+    border-radius: 0px;
+}
+
 
 h1.about-us {
     font-weight: bold;
@@ -106,9 +109,15 @@ h1.about-us {
 
 
 /* -- Gallery -- */
+.gallery {
+    padding-top: 5vh;
+    min-height: 100vh;
+    background-color: rgb(255, 233, 47);
+}
 
 /* -- Subscribe -- */
 .subscribe {
+    padding-top: 5vh;
     height: 70vh;
     background-color: white;
     background-image: url("../img/subscribe-background.png");
@@ -117,6 +126,7 @@ h1.about-us {
 }
 /* -- Blog -- */
 .blog {
+    padding-top: 5vh;
     min-height: 100vh;
     background-color: rgb(176, 124, 2470);
 }
@@ -136,6 +146,7 @@ h1.about-us {
     background-image: url("../img/background-footer.png");
     background-size: cover;
     background-position: center;
+    padding-top: 5vh;
 }
 
 .bold {
@@ -162,16 +173,42 @@ h1.footer-header-text {
     background-color: rgba(0,196,196,0.5);
     margin-top: 10px;
     color: white;
-    border: 0px;
-    border-width: 0;
     max-width: 600px;
+    border-radius: 0px;
+    border: none;
+    border-width: 0px;
 }
 
 .form-control:focus {
     background-color: rgba(0,196,196,1);
     border-left: 3px solid rgb(53, 91,130);
+    color: white;
 }
 
 .form-control::placeholder {
     color: white;
+}
+
+.form-control:focus::placeholder {
+    color: white;
+    font-weight: bold;
+}
+
+.images-row {
+    margin-top: 20vh;
+}
+
+.footer-container {
+    background-color: rgb(38, 38, 38);
+    min-height: 10vh;
+    color: white;
+}
+
+.asd {
+    text-align: center;
+    margin-top: 3vh;
+}
+
+.red {
+    color: red;
 }
