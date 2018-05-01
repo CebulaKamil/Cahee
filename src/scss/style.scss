@@ -99,8 +99,6 @@ img.img-responsive {
 }
 
 
-
-
 h1.about-us {
     font-weight: bold;
     padding-top: 30vh;
@@ -160,8 +158,20 @@ h1.footer-header-text {
 }
 
 /* Form */
-.from-control1 {
-    background-color: red;
-    border: none;
+.form-control {
+    background-color: rgba(0,196,196,0.5);
+    margin-top: 10px;
+    color: white;
+    border: 0px;
+    border-width: 0;
+    max-width: 600px;
 }
 
+.form-control:focus {
+    background-color: rgba(0,196,196,1);
+    border-left: 3px solid rgb(53, 91,130);
+}
+
+.form-control::placeholder {
+    color: white;
+}
