@@ -11,21 +11,21 @@
 <body>
     <nav class="container-fluid fixed-nav">
         <div class="container">
-            <a href="#home" class="col-md-*">
+            <a href="#home">
                 <img class="logo" src="img/logo-header.png" alt="Logo">
             </a>
             <div class="nav-list justify-content-end d-none
-            d-lg-block">
-            <ul class=" col-md-">
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#services">SERVICES</a></li>
-                <li><a href="#gallery">GALLERY</a></li>
-                <li><a href="#blog">BLOG</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-            </ul>
+            d-lg-block" id="list-menu">
+                <ul class="row">
+                    <li class="col-lg"><a href="#home">HOME</a></li>
+                    <li class="col-lg"><a href="#about">ABOUT</a></li>
+                    <li class="col-lg"><a href="#services">SERVICES</a></li>
+                    <li class="col-lg"><a href="#gallery">GALLERY</a></li>
+                    <li class="col-lg"><a href="#blog">BLOG</a></li>
+                    <li class="col-lg"><a href="#contact">CONTACT</a></li>
+                </ul>
             </div>
-            <button class="nav-list justify-content-end d-lg-none mobile-menu "></button>
+            <button class="nav-list justify-content-end d-lg-none" id="hamburger">ASD</button>
         </div>
     </nav>
     <header id="home" class="container-fluid home">
@@ -142,5 +142,6 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

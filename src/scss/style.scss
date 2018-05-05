@@ -5,7 +5,7 @@ a:link, a:visited, a:hover, a:active {
     font-weight: bold;
 }
  
-/* -- HOME -- */
+/* ----- HOME ----- */
 .home {
     min-height: 100vh;
     background-image: url("../img/background-header.png");
@@ -20,21 +20,14 @@ nav {
     padding-bottom: 3vh;
     margin-left: 0px;
     margin-right: 0px;
-    z-index: 1;
-    
+    z-index: 1; 
 }
 
-div.logo {
+
+.logo {
     display: inline;
     background-image: url("../img/logo-header.png");
     background-repeat: no-repeat;
-}
-
-.nav-list {
-    border: 0;
-    display: inline-block;
-    float: right;
-    padding-top: 10px;
 }
 
 li {
@@ -72,10 +65,13 @@ h1.home-header-text {
     background-color: rgb(250, 67, 16);
 }
 
-/* -- About -- */
+
+/* ----- About ----- */
 .about {
     min-height: 100vh;
     background-color: rgb(0, 177, 177);
+    padding-top: 20vh;
+    padding-bottom: 20vh;
 }
 
 img.img-responsive {
@@ -89,7 +85,7 @@ img.img-responsive {
     margin-right: auto;
 }
 
-/* -- Services -- */
+/* ----- Services ----- */
 .services {
     min-height: 100vh;
     background-color: rgb(112, 191, 255);
@@ -108,16 +104,17 @@ h1.about-us {
 }
 
 
-/* -- Gallery -- */
+/* ----- Gallery ----- */
 .gallery {
     padding-top: 5vh;
     min-height: 100vh;
     background-color: rgb(255, 233, 47);
 }
 
-/* -- Subscribe -- */
+/* ----- Subscribe ----- */
 .subscribe {
-    padding-top: 5vh;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
     min-height: 70vh;
     background-color: white;
     background-image: url("../img/subscribe-background.png");
@@ -131,7 +128,7 @@ h1.about-us {
     border: none;
     width: 100px;
 }
-/* -- Blog -- */
+/* ----- Blog ----- */
 .blog {
     padding-top: 5vh;
     min-height: 100vh;
@@ -147,7 +144,7 @@ h1.about-us {
 .text-header {
     font-weight: bold;
 }
-/* -- Contact -- */
+/* ----- Contact ----- */
 .contact {
     min-height: 100vh;
     background-image: url("../img/background-footer.png");
@@ -166,6 +163,7 @@ h1.footer-header-text {
 }
 
 .footer-content {
+    padding-top: 50vh;
     justify-content: center;
     text-align: center;
 }
@@ -223,3 +221,4 @@ h1.footer-header-text {
 .red {
     color: red;
 }
+
