@@ -6,7 +6,7 @@ a:link, a:visited, a:hover, a:active {
 }
  
 /* ----- HOME ----- */
-.home {
+.home-section {
     min-height: 100vh;
     background-image: url("../img/background-header.png");
     background-size: cover;
@@ -23,6 +23,9 @@ nav {
     z-index: 1; 
 }
 
+ul {
+    margin-top: 2vh;
+}
 
 .logo {
     display: inline;
@@ -49,8 +52,9 @@ header {
     padding-top: 40vh;
 }
 
-h1.home-header-text {
+.home-header-text {
     font-weight: bold;
+    font-size: 4rem;
 }
 
 .button-get-free {
@@ -65,16 +69,16 @@ h1.home-header-text {
     background-color: rgb(250, 67, 16);
 }
 
-
 /* ----- About ----- */
 .about {
     min-height: 100vh;
     background-color: rgb(0, 177, 177);
     padding-top: 20vh;
     padding-bottom: 20vh;
+    color: white;
 }
 
-img.img-responsive {
+.img-responsive {
     height: auto;
     width: 100%;  
     padding-top: 10%; 
@@ -83,6 +87,12 @@ img.img-responsive {
 .about-us-content {
     margin-left: auto;
     margin-right: auto;
+}
+
+.about-us-text-header {
+    font-size: 5rem;
+    font-weight: bold;
+    padding-top: 30vh;
 }
 
 /* ----- Services ----- */
@@ -97,18 +107,13 @@ img.img-responsive {
     border-radius: 0px;
 }
 
-
-h1.about-us {
-    font-weight: bold;
-    padding-top: 30vh;
-}
-
-
 /* ----- Gallery ----- */
 .gallery {
-    padding-top: 5vh;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
     min-height: 100vh;
     background-color: rgb(255, 233, 47);
+    color: black;
 }
 
 /* ----- Subscribe ----- */
@@ -130,9 +135,11 @@ h1.about-us {
 }
 /* ----- Blog ----- */
 .blog {
-    padding-top: 5vh;
     min-height: 100vh;
     background-color: rgb(176, 124, 2470);
+    color: white;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
 }
 
 .blog-text-header {
@@ -141,8 +148,16 @@ h1.about-us {
     margin-right: auto;
 }
 
-.text-header {
+.text-header-black {
     font-weight: bold;
+    font-size: 5rem;
+    color: black;
+}
+
+.text-header-white {
+    font-weight: bold;
+    font-size: 5rem;
+    color: white;
 }
 /* ----- Contact ----- */
 .contact {
@@ -150,27 +165,28 @@ h1.about-us {
     background-image: url("../img/background-footer.png");
     background-size: cover;
     background-position: center;
-    padding-top: 5vh;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
 }
 
 .bold {
     font-weight: bold;
 }
 
-h1.footer-header-text {
+.contact-header-text {
     font-weight: bold;
-
+    font-size: 5rem;
 }
 
 .footer-content {
-    padding-top: 50vh;
     justify-content: center;
     text-align: center;
 }
 
-.text-footer-container {
+.text-contact-container {
     margin-left: auto;
     margin-right: auto;
+
 }
 
 /* Form */
@@ -189,10 +205,6 @@ h1.footer-header-text {
     border-left: 3px solid rgb(53, 91,130);
     color: white;
 }
-.xxx {
-    min-width: 80%;
-}
-
 
 .form-control::placeholder {
     color: white;
@@ -203,22 +215,19 @@ h1.footer-header-text {
     font-weight: bold;
 }
 
-.images-row {
-    margin-top: 20vh;
-}
-
 .footer-container {
     background-color: rgb(38, 38, 38);
-    min-height: 10vh;
     color: white;
+    padding: 2vh 0vh 2vh 0vh;
 }
 
-.asd {
+.footer-row {
     text-align: center;
-    margin-top: 3vh;
 }
 
 .red {
     color: red;
 }
+
+
 
