@@ -1,21 +1,19 @@
 $(function(){
     // Fixed navigation  
     $(window).bind('scroll', function () {
-        if ($(window).scrollTop() > 200) {
+        if ($(window).scrollTop() > 100) {
             $('#menu').addClass('fixed');
         } else {
             $('#menu').removeClass('fixed');
         }
      });
 
+     // Smooth scroll
      $('ul li a').bind('click',function(event){
-		var $anchor = $(this);
+        const anchor = $(this);
 		$('html, body').stop().animate({
-			scrollTop: $($anchor.attr('href')).offset().top
+            scrollTop: $(anchor.attr('href')).offset().top,
 		}, 1000);
         event.preventDefault();
-        console.log
 	});
- 
-
 });  

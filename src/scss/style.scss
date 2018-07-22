@@ -1,30 +1,52 @@
+.text-header-black {
+    font-weight: bold;
+    font-size: 5rem;
+    color: black;
+}
+
+.text-header-white {
+    font-weight: bold;
+    font-size: 5rem;
+    color: white;
+}
+
+
 /* Style link "a" */
 a:link, a:visited, a:hover, a:active {
     text-decoration: none;
     color: black;
     font-weight: bold;
 }
- 
+
 /* ----- HOME ----- */
 .home-section {
     min-height: 100vh;
     background-image: url("../img/background-header.png");
     background-size: cover;
     background-position: center;
+    
 }
 
 nav {
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba($color: white, $alpha: 0.0);
+    z-index: 1; 
+    position: absolute;
+    top: 0;
+    left: 0;
     position: fixed;
+    transition: all 0.5s ease-in;
+    padding-top: 3vh;
+}
+
+.fixed {
+    background-color: white;
     padding-top: 3vh;
     padding-bottom: 3vh;
-    margin-left: 0px;
-    margin-right: 0px;
-    z-index: 1; 
 }
 
 ul {
     margin-top: 2vh;
+    text-align: end;
 }
 
 .logo {
@@ -50,6 +72,13 @@ li:hover {
 
 header {
     padding-top: 40vh;
+    position: relative;
+}
+
+.scroll {
+    position: absolute;
+    top: 90%;
+    left: 50%;
 }
 
 .home-header-text {
@@ -71,17 +100,15 @@ header {
 
 /* ----- About ----- */
 .about {
+    padding: 15vh 0 15vh 0;
     min-height: 100vh;
     background-color: rgb(0, 177, 177);
-    padding-top: 20vh;
-    padding-bottom: 20vh;
     color: white;
 }
 
 .img-responsive {
     height: auto;
     width: 100%;  
-    padding-top: 10%; 
 }
 
 .about-us-content {
@@ -97,20 +124,64 @@ header {
 
 /* ----- Services ----- */
 .services {
+    padding: 15vh 0 15vh 0;
     min-height: 100vh;
     background-color: rgb(112, 191, 255);
+
+    .container-button {
+        padding-top: 15vh;
+        text-align: center;
+    }
+
+    .btn-row {
+        margin-top: 1vw;
+    }
+
+    .btnx {
+        background-color: white;
+        font-weight: bold;
+    }
+
+
+    .btnline {
+        padding: 0;
+        text-align: left;
+        background-color: white;
+        position: relative;
+    }
+
+    .btn-text {
+        padding-top: 13%;
+    }
+ 
+    .icon {
+        position: absolute;
+        left: 25%;
+        top: 25%;
+        width: auto;
+        height: auto;
+    }
+    
+    .tomatoes-div {
+        position: relative;
+    
+        .tomatoes-inscription {
+            position: absolute;
+            color: white;
+            top: 40%;
+            left: 0;
+            font-size: 4rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+    }
 }
 
-.btn {
-    margin-top: 10px;
-    width: 400px;
-    border-radius: 0px;
-}
+
 
 /* ----- Gallery ----- */
 .gallery {
-    padding-top: 20vh;
-    padding-bottom: 20vh;
+    padding: 15vh 0 15vh 0;
     min-height: 100vh;
     background-color: rgb(255, 233, 47);
     color: black;
@@ -118,8 +189,7 @@ header {
 
 /* ----- Subscribe ----- */
 .subscribe {
-    padding-top: 20vh;
-    padding-bottom: 20vh;
+    padding: 15vh 0 15vh 0;
     min-height: 70vh;
     background-color: white;
     background-image: url("../img/subscribe-background.png");
@@ -135,11 +205,19 @@ header {
 }
 /* ----- Blog ----- */
 .blog {
+    padding: 15vh 0 15vh 0;
     min-height: 100vh;
     background-color: rgb(176, 124, 2470);
     color: white;
-    padding-top: 20vh;
-    padding-bottom: 20vh;
+    text-align: center;
+}
+
+.images-row {
+    margin-top: 5vh;
+}
+
+.h1 {
+    border-right: 1px solid black;
 }
 
 .blog-text-header {
@@ -148,29 +226,34 @@ header {
     margin-right: auto;
 }
 
-.text-header-black {
-    font-weight: bold;
-    font-size: 5rem;
-    color: black;
+.button-blog-section {
+    background-color: rgb(252, 55, 55);
+    padding: 2vh 5vh 2vh 5vh;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 5vh;
+    box-shadow: 2px 2px 5px black;
 }
 
-.text-header-white {
-    font-weight: bold;
-    font-size: 5rem;
-    color: white;
-}
 /* ----- Contact ----- */
 .contact {
+    padding: 15vh 0 15vh 0;
     min-height: 100vh;
     background-image: url("../img/background-footer.png");
     background-size: cover;
     background-position: center;
-    padding-top: 20vh;
-    padding-bottom: 20vh;
 }
 
 .bold {
     font-weight: bold;
+}
+
+.lol {
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 .contact-header-text {

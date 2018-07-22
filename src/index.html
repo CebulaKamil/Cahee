@@ -9,28 +9,27 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="container-fluid fixed-nav">
-        <div class="container">
-            <div class="row">
-                <a href="#home" class="col-1">
-                    <img class="logo" src="img/logo-header.png" alt="Logo">
-                </a>
-                <div class="justify-content-end d-none
-                    d-lg-block " id="list-menu">
-                    <ul class="row">
-                        <li class="col-lg"><a href="#home">HOME</a></li>
-                        <li class="col-lg"><a href="#about">ABOUT</a></li>
-                        <li class="col-lg"><a href="#services">SERVICES</a></li>
-                        <li class="col-lg"><a href="#gallery">GALLERY</a></li>
-                        <li class="col-lg"><a href="#blog">BLOG</a></li>
-                        <li class="col-lg"><a href="#contact">CONTACT</a></li>
-                    </ul>
-                </div>
-                <button class="nav-list justify-content-end d-lg-none" id="hamburger">ASD</button>
-            </div>
-        </div>
-    </nav>
     <header id="home" class="container-fluid home-section">
+        <nav class="container-fluid fixed-nav" id="menu">
+            <div class="container">
+                <div class="row">
+                    <a href="#home" class="col-2">
+                        <img class="logo" src="img/logo-header.png" alt="Logo">
+                    </a>
+                    <div class="navigation d-none
+                        d-lg-block col-10" id="list-menu">
+                        <ul class="">
+                            <li class="list-ul-menu"><a href="#home">HOME</a></li>
+                            <li class="list-ul-menu"><a href="#about">ABOUT</a></li>
+                            <li class="list-ul-menu"><a href="#services">SERVICES</a></li>
+                            <li class="list-ul-menu"><a href="#gallery">GALLERY</a></li>
+                            <li class="list-ul-menu"><a href="#blog">BLOG</a></li>
+                            <li class="list-ul-menu"><a href="#contact">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -40,6 +39,7 @@
                 </div>
             </div>
         </div>
+        <img src="img/scroll.png" class="scroll" id="scroll">
     </header>
     <section id="about" class="about">
         <div class="container">
@@ -57,36 +57,79 @@
     <section id="services" class="services">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
-                    <button class="btn">Online Shopping</button> <br />
-                    <button class="btn">Quality Product</button> <br />
-                    <button class="btn">Domestic&International Delivery</button> <br />
-                    <button class="btn">Well Organized</button> <br />
+                <div class="col-lg-6 container-button">
+                    <div class="row justify-content-center btn-row">
+                        <div class="btn-div"></div>
+                        <div class="col-6 btnx">
+                            <p class="btn-text">Online Shopping</p>   
+                        </div>
+                        <div class="col-2 btnline">
+                            <img src="img/line.png" class="line">
+                            <img src="img/onlineshoping.png" class="icon">
+                        </div>
+                    </div> 
+                    <div class="row justify-content-center btn-row">
+                        <div class="col-6 btnx">
+                            <p class="btn-text">Quality Product</p>    
+                        </div>
+                        <div class="col-2 btnline">
+                            <img src="img/line.png" class="line">
+                            <img src="img/quality.png" class="icon">
+                        </div>
+                    </div> 
+                    <div class="row justify-content-center btn-row">
+                        <div class="col-6 btnx">
+                            <p class="btn-text">Domestic & International Delivery</p>   
+                            </div>
+                        <div class="col-2 btnline">
+                            <img src="img/line.png" class="line">
+                            <img src="img/delivery.png" class="icon">
+                        </div>
+                    </div> 
+                    <div class="row justify-content-center btn-row">
+                        <div class="col-6 btnx">
+                            <p class="btn-text">Well Organized</p>
+                        </div>
+                        <div class="col-2 btnline">
+                            <img src="img/line.png" class="line">
+                            <img src="img/organized.png" class="icon">
+                        </div>
+                    </div> 
                 </div>
-                <div class="col-lg-6">
-                    <img src="img/tomatoes.png" class="img-responsive">
+                <div class="col-lg-6 tomatoes-div">
+                    <img src="img/tomatoes.png" class="img-responsive tomatoes">
+                    <span class="tomatoes-inscription">Our Services</span>
                 </div>
             </div>
         </div>
     </section>
     <section id="gallery" class="gallery">
         <div class="container">
-            <div class="row">
+            <div class="row" >
                 <div class="blog-text-header col-md-6">
                     <h1 class="text-header-black">Gallery</h1>
                     Pellentesque fermentum vulputate diam vitae tincidunt. Sed et augue non nibh malesuada convallis. Sed et augue non nibh malesuada convallis. Sed et augue non.
                 </div>
                 <div class="row gallery-img-row">
                     <div class="col-lg-8">
-                        <img src="img/gallery1.jpg" class="img-responsive">
+                        <img src="img/gallery1.png" class="img-responsive">
                     </div>
                     <div class="col-lg-4">
-                            <img src="img/gallery2.jpg" class="img-responsive"> <br />
-                            <img src="img/gallery3.jpg" class="img-responsive">
+                        <img src="img/gallery2.png" class="img-responsive"> <br />
+                        <img src="img/gallery3.png" class="img-responsive">
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <img src="img/gallery4.png" class="img-responsive">
                         </div>
-            
+                        <div class="col-lg-6">
+                            <img src="img/gallery5.png" class="img-responsive">
+                        </div>
+                    </div>
                 </div>
+                <button class="btn justify-content-center">View more</button>
             </div>
+        </div>
     </section>
     <section class="subscribe">
         <div class="container">
@@ -113,10 +156,11 @@
                 </div>
             </div>
             <div class="row images-row">
-                    <img class="col-lg-4 img-responsive" src="img/blog1.png">
-                    <img class="col-lg-4 img-responsive" src="img/blog2.png">
-                    <img class="col-lg-4 img-responsive" src="img/blog3.png">
+                    <img class="col-lg-4 img-responsive blog-img" src="img/blog1.png">
+                    <img class="col-lg-4 img-responsive blog-img" src="img/blog2.png">
+                    <img class="col-lg-4 img-responsive blog-img" src="img/blog3.png">
             </div>
+            <button class="button-blog-section">View more</button>
         </div>
     </section>
     <section id="contact" class="contact">
@@ -162,6 +206,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
